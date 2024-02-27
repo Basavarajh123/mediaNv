@@ -68,3 +68,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+ <div>
+                <div>
+                    <p>Bid No: {orderDetails.bidNumber}</p>
+                    <p>({orderDetails.bidderName})</p>
+                </div>
+                <div>
+                    <div>
+                        <FaCircle className="circle-icon"/>
+                        <HiOutlineDotsVertical />
+                        <FaMapMarkerAlt />
+                        
+
+                    </div>
+                    <div>
+                        <p>{orderDetails.fromCityAddress}</p>
+                        <p>Loading Point:{orderDetails.loadingPoint}</p>
+                        <p>{orderDetails.toCityAddress}</p>
+                        <p>{orderDetails. unLoadingPoint}</p>
+                       
+                    </div>
+                </div>
+                <div>
+                    <p><span><FaSuitcase /> Vehicle loading date:{orderDetails.startDate}</span></p>
+                    <p><span><BsTruckFront />Vehicle Type: {orderDetails.vehicleType}</span></p>
+                </div>
+                <div>
+                    hi
+                </div>
+            </div> */

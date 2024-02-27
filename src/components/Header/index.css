@@ -1,0 +1,133 @@
+
+
+.header-main-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo-text{
+
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 40px;
+}
+.header-left-contaier{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 1px 5px #888888;
+    width: 12%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 10px;
+    position: fixed;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    background-color: black;
+    border-radius:100%;
+    padding: 10px;
+    margin-right: 10px;
+}
+.ul-container{
+    list-style-type: none;
+    
+}
+
+.ul-container2{
+    display: flex;
+    flex-direction: column;
+   
+    list-style-type: none;
+   
+   
+}
+
+.list-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+}
+.list-item-text{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    padding-left: 10px;
+    
+}
+
+.active-tab-text{
+    color: blue;
+    border: darkblue;
+    border-bottom-style: solid ;
+    padding-bottom: 10px;
+    border-bottom-style: solid ;
+    border-bottom-width: 5px;
+    width: min-content;
+ 
+}
+.grid-icon{
+   
+    color: #888888;
+    cursor: pointer;
+}
+
+.nav-tabs-container{
+    display: flex;
+    flex-direction: column;
+  
+    
+    
+    
+}
+
+.navbar-right-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: center;
+    height: 50px;
+    width: 400px;
+   
+
+
+}
+
+.header-right-container{
+    margin-left: 12%;
+    width: 88%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+    box-shadow: 5px 5px 5px #888888;
+    
+
+}
+.nav-item-text{
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    width: 100px;
+    height: 30px;
+    
+    
+    
+}
+.active-tab{
+    background-color: aquamarine;
+    border-radius: 5px;
+   height: 50px;
+    width: 100%;
+    
+}
