@@ -1,9 +1,6 @@
 
-import { FaCircle ,FaLongArrowAltDown,FaMapMarkerAlt} from "react-icons/fa";
-import { FaSuitcase } from "react-icons/fa6";
-import { HiOutlineDotsVertical } from "react-icons/hi";
-import { BsTruckFront } from "react-icons/bs";
-import { RiBox3Fill } from "react-icons/ri";
+import { FaCircle ,FaLongArrowAltDown} from "react-icons/fa";
+
 import './index.css'
 
 
