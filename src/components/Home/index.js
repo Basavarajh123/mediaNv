@@ -158,8 +158,13 @@ const orderDetailsList=[
 class Home extends Component{
 
 state={
-    tabId:navItemList1[0].id
+    tabId:navItemList1[0].id,
+    viewDetailsId:0,
 }
+
+
+
+
 
 
 onRenderOrdercardDetails=()=>(
@@ -223,6 +228,11 @@ onRenderTopBar=()=>(
     </div>
 )
 
+onClickViewDetails=(viewDetailsId)=>{
+    this.setState({
+        viewDetailsId
+    })
+}
 
 
 onchangeTab=(tabId)=>{
@@ -232,8 +242,9 @@ onchangeTab=(tabId)=>{
 }
 
     render(){
-        const{tabId}= this.state
-        console.log(tabId)
+        const{tabId,viewDetailsId}= this.state
+        console.log(viewDetailsId)
+       
         return(
             <div>
 
@@ -241,7 +252,7 @@ onchangeTab=(tabId)=>{
                {this.onRenderTopBar()}
                <div>
                     {this.onRenderOrdercardDetails()}
-                    {orderDetailsList.map(eachOrder=>(<OrderDetailsCard orderDetails={eachOrder} key={eachOrder.id} />))}
+                    {orderDetailsList.map(eachOrder=>(<OrderDetailsCard orderDetails={eachOrder} key={eachOrder.id} onClickViewDetails={this.onClickViewDetails} viewDetailsId={viewDetailsId}/>))}
                </div>
             </div>
         )

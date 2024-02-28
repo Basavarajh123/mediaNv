@@ -2,6 +2,7 @@
 
 .list-main-container{
     display: flex;
+
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -14,13 +15,18 @@
     font-size: 18px;
     font-weight: 700;
     font-family: 'Roboto';
+    padding-left: 20px;
+    flex-wrap: wrap;
 }
+
 
 .list-text{
     color: gray;
     font-size: 18px;
     font-weight: 700;
     font-family: 'Roboto';
+    padding-left: 20px;
+   
 }
 .circle-icon{
     color: green;
@@ -29,4 +35,103 @@
 .hr-tag{
     margin-left: 16%;
     margin-right: 50px;
+}
+
+.bid-order-details-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 50px;
+    border-radius: 10px;
+
+}
+.row-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.column-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.location-text{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    color: darkblue;
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+.loading-point-text{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    color: green;
+    padding-left: 20px;
+}
+.unloading-point-text{
+    font: 16px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    color: red;
+    padding-left: 20px;
+}
+.icons{
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+.bid-number-and-loading-date-text{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+.address-text{
+    color: gray;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+.text{
+    color: darkblue;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    padding-right: 20px;
+}
+.first-container{
+    flex-wrap: wrap;
+    width: 30%;
+}
+.assigned-text{
+    color: blue;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    padding-right: 20px;
+}
+
+.view-result-btn{
+    border: none;
+    background: none;
+    color: blue;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+.show-details{
+    display: flex;
+
+}
+.not-show-details{
+    display: none;
 }
