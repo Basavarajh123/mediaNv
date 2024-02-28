@@ -14,7 +14,7 @@ const OrderDetailsCard=(props)=>{
     const{orderDetails,onClickViewDetails,viewDetailsId}= props
     const onClickDetails =()=>onClickViewDetails(orderDetails.id)
     
-    
+    console.log(viewDetailsId)
     
     return(
         <li>
