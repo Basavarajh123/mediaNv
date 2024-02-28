@@ -42,7 +42,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     background-color: aquamarine;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-left: 18%;
     margin-right: 50px;
     border-radius: 10px;
@@ -134,4 +134,26 @@
 }
 .not-show-details{
     display: none;
+}
+.view-less-btn{
+    background-color: none;
+    outline: none;
+    border: none;
+    color: darkblue;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Roboto';
+    align-self: flex-end;
+    background: none;
+    cursor: pointer;
+}
+.view-details-btn{
+    background: none;
+    color: blue;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Roboto';
+    border: none;
+    cursor: pointer;
+    
 }

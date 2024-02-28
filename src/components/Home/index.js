@@ -50,6 +50,7 @@ const navItemList2=[
 const orderDetailsList=[
     {
         id:1,
+        bidderName:'Sundar Yadav',
         bidNumber:122345678123,
         startDate:"14/02/2024",
         startTime:"5:40 Pm",
@@ -77,6 +78,7 @@ const orderDetailsList=[
     {
         
         id:2,
+        bidderName:'Sundar Yadav',
         bidNumber: 16515120650125,
         startDate:"17/02/2024",
         startTime:"5:40 Pm",
@@ -102,6 +104,7 @@ const orderDetailsList=[
 
     },{
         id:3,
+        bidderName:'Sundar Yadav',
         bidNumber:122345678123,
         startDate:"14/02/2024",
         startTime:"5:40 Pm",
@@ -127,6 +130,7 @@ const orderDetailsList=[
 
     },{
         id:4,
+        bidderName:'Sundar Yadav',
         bidNumber:122345678123,
         startDate:"14/02/2024",
         startTime:"5:40 Pm",
@@ -149,7 +153,7 @@ const orderDetailsList=[
         materialWeight:"4000 Kg",
         response:4,
         assignedStaff:'Mohit',
-        bidderName:'Sunder Yadav'
+       
 
     }
 

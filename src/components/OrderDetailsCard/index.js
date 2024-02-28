@@ -13,12 +13,15 @@ import './index.css'
 const OrderDetailsCard=(props)=>{
     const{orderDetails,onClickViewDetails,viewDetailsId}= props
     const onClickDetails =()=>onClickViewDetails(orderDetails.id)
+    const showOrder = orderDetails.id=== viewDetailsId ? 'show-details' :'not-show-details'
+    const showDetails = orderDetails.id=== viewDetailsId ? 'not-show-details':'show-details'
+    const onClickLessShowbtn= ()=>onClickViewDetails(0)
     
     console.log(viewDetailsId)
     
     return(
-        <li>
-        <div className='list-main-container'>
+        <li key={orderDetails.id}>
+        <div className={`list-main-container ${showDetails}`}>
             <p><FaCircle className="circle-icon"/> {orderDetails.id}</p>
             
             <div>
@@ -57,13 +60,13 @@ const OrderDetailsCard=(props)=>{
         <hr className="hr-tag"/>
         
             
-        <div  className='bid-order-details-main-container'>
+        <div  className={`bid-order-details-main-container ${showOrder}`}>
             <div className=" first-container">
 
             
                 <div className="row-container">
                     <p className="bid-number-and-loading-date-text">Bid No: {orderDetails.bidNumber}</p>
-                    <p>({orderDetails.bidderName})</p>
+                    <p className="address-text">({orderDetails.bidderName})</p>
                 </div>
                 <div className="row-container">
                     <div className="column-container">
@@ -103,9 +106,10 @@ const OrderDetailsCard=(props)=>{
                     <p className="text"><span><MdPhone /></span>Phone number: <span className="assigned-text">{orderDetails.phoneNumber}</span></p>
                     <p className="text">Target Price : <span className="assigned-text">{orderDetails.targetPrice}</span></p>
                     <p className="text">Number of Bider for this Bid: <span className="assigned-text">{orderDetails.numberOfBidder}</span></p>
-                    <button type="button">View Details</button>
-                    <button type="button">View Less <span><MdExpandLess /></span></button>
+                    <button type="button" className="view-details-btn">View Details</button>
+                    
                 </div>
+                <button type="button" className="view-less-btn" onClick={onClickLessShowbtn}>View Less <span><MdExpandLess /></span></button>
             </div>
            
 
